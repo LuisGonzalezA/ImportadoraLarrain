@@ -105,6 +105,17 @@ ul, ol {
   transition: 0.2s all;
 }
 
+.search-btn{
+  display: inline-block;
+  background-color: #D10024;
+  border: none;
+  border-radius: 60px;
+  color: black;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+
 .primary-btn:hover, .primary-btn:focus {
   opacity: 0.9;
   color: #FFF;
@@ -317,11 +328,19 @@ textarea.input {
 /*----------------------------*\
 	Tables
 \*----------------------------*/
+
+.table{
+  margin: auto;
+  width: 100%;
+  margin: auto;
+}
+
+
 .contenido-tabla {
   border-collapse: collapse;
-  margin: 15px;
+  margin: 16px;
   font-size: 16px;
-  min-width: 100px;
+  min-width: 10%;
 }
 
 .contenido-tabla thead tr {
