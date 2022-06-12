@@ -17,6 +17,7 @@ Table OF Contents
 ------ Typography
 ------ Buttons
 ------ Inputs
+------ Tables
 ------ Sections
 ------ Breadcrumb
 2 > HEADER
@@ -93,7 +94,7 @@ ul, ol {
 .primary-btn {
   display: inline-block;
   padding: 12px 30px;
-  background-color: green;
+  background-color: #D10024;
   border: none;
   border-radius: 40px;
   color: black;
@@ -311,6 +312,40 @@ textarea.input {
 
 .input-radio input[type="radio"]:checked~.caption, .input-checkbox input[type="checkbox"]:checked~.caption {
   max-height: 800px;
+}
+
+/*----------------------------*\
+	Tables
+\*----------------------------*/
+.contenido-tabla {
+  border-collapse: collapse;
+  margin: 15px;
+  font-size: 16px;
+  min-width: 100px;
+}
+
+.contenido-tabla thead tr {
+  background-color: #D10024;
+  color: #FFFFFF;
+  text-align: left;
+  font-weight: bold;
+}
+
+.contenido-tabla th,
+.contenido-tabla td{
+  padding: 12px 15px;
+}
+
+.contenido-tabla tbody tr{
+  border-bottom: 1px solid #dddd;
+}
+
+.contenido-tabla tbody tr:nth-of-type(even){
+  border-bottom: solid #F3F3F3;
+}
+
+.contenido-tabla tbody tr:last-of-type{
+  border-bottom: 2px solid #D10024;
 }
 
 /*----------------------------*\
