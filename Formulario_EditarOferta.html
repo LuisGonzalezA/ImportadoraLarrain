@@ -196,12 +196,12 @@
 				<!-- row -->
 				<div class="row">
 					<div class="col-md-12">
-						<h3 class="breadcrumb-header">Formulario oferta nueva</h3>
+						<h3 class="breadcrumb-header">Formulario Editar Oferta</h3>
 						<ul class="breadcrumb-tree">
 							<li><a href="#">Home</a></li>
                             <li class="#"><a href="#">Perfil</a></li>
                             <li class="#"><a href="#">Lista de ofertas</a></li>
-							<li class="active">Formulario oferta nueva</li>
+							<li class="active">Formulario Editar Oferta</li>
 						</ul>
 					</div>
 				</div>
@@ -222,29 +222,21 @@
 			name="validacionProd" id="validacionProd">
 			<section class="section-products">
 			<div class="col-lg-10">
-					<div class="form-group">
 							<div class="form-group">
-								<label>ID de oferta</label>
-								<input class="form-control" type="text"
-								name="idProd" id="idProd" placeholder="#01">
-								<br>
-								<div class="center">
-									<button type="submit" class="btn search-btn">Buscar oferta</button>
-								</div>
-							</div>
-
-							<div class="form-group">
-								<h5>Categoría</h5>
-								<select name="categProd" id="categProd">
-									<option value="tecnologia">Tecnologia</option>
-									<option value="hardware">Hardware</option>
-									<option value="periféricos">Periféricos</option>
-									<option value="electronicos">Electronicos</option>
-								</select>
+								<h5>Nombre oferta</h5>
+								<input class="form-control" type="text" name="nombreOferta" id="nombreOferta">
 							</div>
 							<div class="form-group">
-								<h5>Nombre producto</h5>
-								<input class="form-control" type="text" name="nombreProd" id="nombreProd">
+								<h5>Nombre distribuidora</h5>
+								<input class="form-control" type="text" name="nombreDis" id="nombreDis">
+							</div>
+							<div class="form-group">
+								<h5>Fecha de termino</h5>
+								<input class="form-control" type="text" name="fechaTer" id="fechaTer">
+							</div>
+							<div class="form-group">
+								<h5>Productos que aplican</h5>
+								<input class="form-control" type="text" name="fechaTer" id="fechaTer">
 							</div>
 							<div class="form-group">
 								<h5>Descripción producto</h5>
@@ -253,71 +245,87 @@
 								</textarea>
 							</div>
 							<div class="form-group">
-								<h5>Precio producto</h5>
-								<input class="form-control" type="text" name="precioProd" id="precioProd">
-							</div>
-							<div class="form-group">
 								<h5>Descuento oferta</h5>
-								<input class="form-control" type="number" name="descuentoOferProd" id="descuentoOferProd">
+								<input class="form-control" type="number" min="0"  name="descuentoOferProd" id="descuentoOferProd">
 							</div>
 							<div class="center">
 								<button type="reset" class="btn primary-btn">Guardar cambios</button>
-								<button type="#" class="btn primary-btn">Eliminar oferta</button>
 							</div>
 						</div>
 					</div>
 				</form>
 			</div>
-		</div>
 			<!-- /Editar oferta -->
 
 			<!-- Tabla de ofertas -->
 
-							<div class="container">
-								<div class="col-lg-10" >
-							<table class="contenido-tabla" width="100%" height="20%">
-								<thead>
-								<tr>
-									<th scope="col">ID</th>
-									<th scope="col">Categoría</th>
-									<th scope="col">Nombre</th>
-									<th scope="col">Descripción</th>
-									<th scope="col">Precio</th>
-									<th scope="col">% Desc. oferta</th>
-								</tr>
-								</thead>
-								<tbody>
-								<tr>
-									<th scope="row">1</th>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-								</tr>
-								<tr>
-									<th scope="row">2</th>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-								</tr>
-								<tr>
-									<th scope="row">3</th>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-								</tr>
-								</tbody>
-							</table>
-						</div>
+			<div class="container">
+				<div class="col-lg-10" >
+			<table class="contenido-tabla">
+				<thead>
+				<tr>
+					<th scope="col">Nombre Oferta</th>
+					<th scope="col">Nombre distribuidora</th>
+					<th scope="col">Fecha termino</th>
+					<th scope="col">Productos Que Aplican</th>
+					<th scope="col">Descripción</th>
+					<th scope="col">Contactos</th>
+					<th scope="col">acciones</th>
+				</tr>
+				</thead>
+				<tbody>
+				<tr>
+					<th scope="row">1</th>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td><li><a href="Formulario_EditarOferta.html">Editar</a></li><li><a>Eliminar</a></li></td>
+				</tr>
+				<tr>
+					<th scope="row">1</th>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td><li><a href="Formulario_EditarOferta.html">Editar</a></li><li><a>Eliminar</a></li></td>
+				</tr>
+				<tr>
+					<th scope="row">1</th>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td><li><a href="Formulario_EditarOferta.html">Editar</a></li><li><a>Eliminar</a></li></td>
+				</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+			<!-- /Centro de pagina -->
+	
+	
+			<!-- SECTION -->
+			<div class="section">
+				<!-- container -->
+				<div class="container">
+					<!-- row -->
+					<div class="row">
 					</div>
+					<!-- /row -->
 				</div>
-		</section>
-
+				<!-- /container -->
+			</div>
 
 		<!-- SECTION -->
 		<div class="section">
