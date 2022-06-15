@@ -48,7 +48,7 @@
 					</ul>
 					<ul class="header-links pull-right">
 						<li><a href="#"><i class="fa fa-dollar"></i> CLP</a></li>
-						<li><a href="perfil.html"><i class="fa fa-user-o"></i> Mi Cuenta</a></li>
+						<li><a href="#"><i class="fa fa-user-o"></i> Mi Cuenta</a></li>
 					</ul>
 				</div>
 			</div>
@@ -198,9 +198,10 @@
 					<div class="col-md-12">
 						<h3 class="breadcrumb-header">Formulario oferta nueva</h3>
 						<ul class="breadcrumb-tree">
-							<li><a href="index.html">Home</a></li>
+							<li><a href="#">Home</a></li>
                             <li class="#"><a href="perfil.html">Perfil</a></li>
-							<li class="active">Lista de ofertas</li>
+                            <li class="#"><a href="Lista_oferta_AC.html">Lista de ofertas</a></li>
+							<li class="active">Formulario editar oferta</li>
 						</ul>
 					</div>
 				</div>
@@ -209,47 +210,75 @@
 			<!-- /container -->
 		</div>
 		<!-- /BREADCRUMB -->
-        <!-- Centro de pagina -->
-		<div class="container">
-			<div class="col-lg-10" >
-		<table class="contenido-tabla">
-			<thead>
-			<tr>
-				<th scope="col">ID Oferta</th>
-				<th scope="col">Nombre Oferta</th>
-				<th scope="col">Fecha de Termino</th>
-				<th scope="col">Nombre Proveedor</th>
-				<th scope="col">Detalles</th>
-			</tr>
-			</thead>
-			<tbody>
-			<tr>
-				<th scope="row">1</th>
-				<td>Black friday</td>
-				<td>22/06/2022</td>
-				<td>xingchuan</td>
-				<td><li><a href="detalles_oferta.html">Ver detalles</a></li><li><a href="Pagina_reporte.html">Reportar un Error</a></li></td>
-			</tr>
-			<tr>
-				<th scope="row">2</th>
-				<td>Black friday</td>
-				<td>15/06/2022</td>
-				<td>xingchuan</td>
-				<td><li><a href="detalles_oferta.html">Ver detalles</a></li><li><a href="Pagina_reporte.html">Reportar un Error</a></li></td>
-			</tr>
-			<tr>
-				<th scope="row">3</th>
-				<td>Año nuevo Chino</td>
-				<td>15/11/2021</td>
-				<td>xingchuan</td>
-				<td><li><a href="detalles_oferta.html">Ver detalles</a></li><li><a href="Pagina_reporte.html">Reportar un Error</a></li></td>
-			</tr>
-			</tbody>
-		</table>
-	</div>
-		</div>
-        <!-- /Centro de pagina -->
-        <!-- SECTION -->
+        <!-- /Formulario Oferta-->
+        <div class="container">
+            <div class="row borde-bootstrap-row">
+                <h4>Registro de oferta</h4>
+            </div>
+            <br>
+            <form class="borde-bootstrap-row" action="registro.php" method="post" name="registro" id="registro">
+                <div class="row borde-bootstrap-row">
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <label for="IDofer">ID de oferta</label>
+                            <input class="form-control" type="text" name="IDofer" id="IDofer" 
+                                aria-describedby="rut-help" placeholder="Ingresa el ID unico de la oferta">
+                        </div>
+                        <div class="form-group">
+                            <label for="NomOfer">Nombre de oferta</label>
+                            <input class="form-control" type="text" name="NomOfer" id="NomOfer" 
+                                aria-describedby="rut-help" placeholder="Ingresa el nombre de la oferta">
+                        </div>
+                        <div class="form-group">
+                            <label for="FechIni">Fecha de inicio</label>
+                            <input class="form-control" type="text" name="FechIni" id="FechIni" 
+                                aria-describedby="rut-help" placeholder="Ingresa la fecha de inicio de la oferta">
+                        </div>
+                        <div class="form-group">
+                            <label for="FechTer">Fecha de termino</label>
+                            <input class="form-control" type="text" name="FechTer" id="FechTer" 
+                                aria-describedby="rut-help" placeholder="Ingresa la fecha de termino de la oferta">
+                        </div>
+                        <div class="form-group">
+                            <label for="nombre">Nombre Proveedor</label>
+                            <input class="form-control" type="text" name="nombre" id="nombre" 
+                                placeholder="Escribe aquí el nombre del proveedor">
+                        </div>
+                        <div class="form-group">
+                            <label for="productos">Productos que aplican</label>
+                            <input class="form-control" type="text" name="productos" id="Productos" 
+                                placeholder="Escribe aquí los Productos que aplican a la oferta">
+                        </div>
+                        <div class="form-group">
+                            <label for="desc">Descripcion</label>
+                            <input class="form-control" type="desc" name="desc" id="desc" 
+                                aria-describedby="correo-help" placeholder="Escribe aquí la descripcion de la oferta">
+                            <small id="correo-help" class="form-text text-muted">
+                                Escribe una descripcion de la oferta incluyendo porcentajes de descuento o precios especificos de aplicar en la oferta.
+                            </small>
+                        </div>
+                        <h5>Metodos de contacto</h5>
+                            <label for="correo">Correo</label>
+                            <input class="form-control" type="email" name="correo" id="correo" 
+                                aria-describedby="correo-help" placeholder="Escribe aquí tu correo">
+                            <small id="correo-help" class="form-text text-muted">
+                                Escribe el correo del proveedor
+                            </small>
+                        </div>
+                        <div class="form-group">
+                            <label for="RRSS">Telefono</label>
+                            <textarea class="form-control" type="tel" name="tel" id="tel" width="5" cols="20" rows="2" 
+                                aria-describedby="direccion-help"placeholder="Escribe aquí el numero telefonico del proveedor"></textarea>
+                        </div>
+                    </div>
+					<button type="#" class="primary-btn"><a href="Lista_oferta_SI.html">Volver a la lista de ofertas</a></button>
+                    <button type="#" class="terciary-btn"><a href="Pagina_reporte.html">Reportar un error</a></button> 
+                </div>
+            </form>
+        </div>
+        <!-- /Fin formulario oferta-->
+
+		<!-- SECTION -->
 		<div class="section">
 			<!-- container -->
 			<div class="container">
@@ -315,7 +344,7 @@
 							<div class="footer">
 								<h3 class="footer-title">Servicio</h3>
 								<ul class="footer-links">
-									<li><a href="#">Mi Cuenta</a></li>
+									<li><a href="perfil.html">Mi Cuenta</a></li>
 									<li><a href="#">Ver Carro</a></li>
 									<li><a href="#">Lista de Deseados</a></li>
 									<li><a href="#">Seguir mi pedido</a></li>
