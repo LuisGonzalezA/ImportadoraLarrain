@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="esp">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		 <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+		<title>Lista de ofertas</title>
+
+ 		<!-- Google font -->
+ 		<link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700" rel="stylesheet">
+
+ 		<!-- Bootstrap -->
+ 		<link type="text/css" rel="stylesheet" href="css/bootstrap.min.css"/>
+
+ 		<!-- Slick -->
+ 		<link type="text/css" rel="stylesheet" href="css/slick.css"/>
+ 		<link type="text/css" rel="stylesheet" href="css/slick-theme.css"/>
+
+ 		<!-- nouislider -->
+ 		<link type="text/css" rel="stylesheet" href="css/nouislider.min.css"/>
+
+ 		<!-- Font Awesome Icon -->
+ 		<link rel="stylesheet" href="css/font-awesome.min.css">
+
+ 		<!-- Custom stlylesheet -->
+ 		<link type="text/css" rel="stylesheet" href="css/style.css"/>
+
+ 		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+ 		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+ 		<!--[if lt IE 9]>
+ 		  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+ 		  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+ 		<![endif]-->
+
+    </head>
+	<body>
+		<!-- HEADER -->
+		<header>
+			<!-- TOP HEADER -->
+			<div id="top-header">
+				<div class="container">
+					<ul class="header-links pull-left">
+						<li><a href="#"><i class="fa fa-phone"></i> +021-95-51-84</a></li>
+						<li><a href="#"><i class="fa fa-envelope-o"></i> Larrain.Impor@gmail.com</a></li>
+						<li><a href="#"><i class="fa fa-map-marker"></i> 1734 Stonecoal Road</a></li>
+					</ul>
+					<ul class="header-links pull-right">
+						<li><a href="#"><i class="fa fa-dollar"></i> CLP</a></li>
+						<li><a href="#"><i class="fa fa-user-o"></i> Mi Cuenta</a></li>
+					</ul>
+				</div>
+			</div>
+			<!-- /TOP HEADER -->
+
+			<!-- MAIN HEADER -->
+			<div id="header">
+				<!-- container -->
+				<div class="container">
+					<!-- row -->
+					<div class="row">
+						<!-- LOGO -->
+						<div class="col-md-3">
+							<div class="header-logo">
+								<a href="#" class="logo">
+									<img src="./img/logo.png" alt="">
+								</a>
+							</div>
+						</div>
+						<!-- /LOGO -->
+
+						<!-- SEARCH BAR -->
+						<div class="col-md-6">
+							<div class="header-search">
+								<form>
+									<select class="input-select">
+										<option value="0">Todas las Categorias</option>
+										<option value="1">Accesorios</option>
+										<option value="1">Audifonos</option>
+                                        <option value="1">Celulares</option>
+                                        <option value="1">Cargadores</option>
+                                        <option value="1">Laptops</option>
+									</select>
+									<input class="input" placeholder="Buscar aqui">
+									<button class="search-btn">Buscar</button>
+								</form>
+							</div>
+						</div>
+						<!-- /SEARCH BAR -->
+
+						<!-- ACCOUNT -->
+						<div class="col-md-3 clearfix">
+							<div class="header-ctn">
+								<!-- Wishlist -->
+								<div>
+									<a href="#">
+										<i class="fa fa-heart-o"></i>
+										<span>Mi Lista de deseados</span>
+										<div class="qty">2</div>
+									</a>
+								</div>
+								<!-- /Wishlist -->
+
+								<!-- Cart -->
+								<div class="dropdown">
+									<a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true">
+										<i class="fa fa-shopping-cart"></i>
+										<span>Carro de compras</span>
+										<div class="qty">3</div>
+									</a>
+									<div class="cart-dropdown">
+										<div class="cart-list">
+											<div class="product-widget">
+												<div class="product-img">
+													<img src="./img/product01.png" alt="">
+												</div>
+												<div class="product-body">
+													<h3 class="product-name"><a href="#">Nombre producto de prueba 1</a></h3>
+													<h4 class="product-price"><span class="qty">1x</span>$980.00</h4>
+												</div>
+												<button class="delete"><i class="fa fa-close"></i></button>
+											</div>
+
+											<div class="product-widget">
+												<div class="product-img">
+													<img src="./img/product02.png" alt="">
+												</div>
+												<div class="product-body">
+													<h3 class="product-name"><a href="#">Nombre producto de prueba 2</a></h3>
+													<h4 class="product-price"><span class="qty">3x</span>$980.00</h4>
+												</div>
+												<button class="delete"><i class="fa fa-close"></i></button>
+											</div>
+										</div>
+										<div class="cart-summary">
+											<small>3 Item(s) selected</small>
+											<h5>SUBTOTAL: $2940.00</h5>
+										</div>
+										<div class="cart-btns">
+											<a href="#">Ver Carro</a>
+											<a href="#">Checkout  <i class="fa fa-arrow-circle-right"></i></a>
+										</div>
+									</div>
+								</div>
+								<!-- /Cart -->
+
+								<!-- Menu Toogle -->
+								<div class="menu-toggle">
+									<a href="#">
+										<i class="fa fa-bars"></i>
+										<span>Menu</span>
+									</a>
+								</div>
+								<!-- /Menu Toogle -->
+							</div>
+						</div>
+						<!-- /ACCOUNT -->
+					</div>
+					<!-- row -->
+				</div>
+				<!-- container -->
+			</div>
+			<!-- /MAIN HEADER -->
+		</header>
+		<!-- /HEADER -->
+
+		<!-- NAVIGATION -->
+		<nav id="navigation">
+			<!-- container -->
+			<div class="container">
+				<!-- responsive-nav -->
+				<div id="responsive-nav">
+					<!-- NAV -->
+					<ul class="main-nav nav navbar-nav">
+						<li class="active"><a href="#">Inicio</a></li>
+						<li><a href="#">Destacados</a></li>
+						<li><a href="#">Categorias</a></li>
+						<li><a href="#">Laptops</a></li>
+						<li><a href="#">Celulares</a></li>
+						<li><a href="#">Camaras</a></li>
+						<li><a href="#">Accessorios</a></li>
+					</ul>
+					<!-- /NAV -->
+				</div>
+				<!-- /responsive-nav -->
+			</div>
+			<!-- /container -->
+		</nav>
+		<!-- /NAVIGATION -->
+
+		<!-- BREADCRUMB -->
+		<div id="breadcrumb" class="section">
+			<!-- container -->
+			<div class="container">
+				<!-- row -->
+				<div class="row">
+					<div class="col-md-12">
+						<h3 class="breadcrumb-header">Formulario Editar Oferta</h3>
+						<ul class="breadcrumb-tree">
+							<li><a href="#">Home</a></li>
+                            <li class="#"><a href="#">Perfil</a></li>
+                            <li class="#"><a href="#">Lista de ofertas</a></li>
+							<li class="active">Formulario Editar Oferta</li>
+						</ul>
+					</div>
+				</div>
+				<!-- /row -->
+			</div>
+			<!-- /container -->
+		</div>
+		<!-- /BREADCRUMB -->
+
+		<!-- Editar oferta -->
+		<div class="container">
+            <div class="row borde-bootstrap-row">
+		<h1 class="text-center	">Editar oferta</h1>
+		</div>
+		<br>
+		<div>
+			<form class="borde-bootstrap-row" action="validacionProd.php" method="post" 
+			name="validacionProd" id="validacionProd">
+			<section class="section-products">
+			<div class="col-lg-10">
+							<div class="form-group">
+								<h5>Nombre oferta</h5>
+								<input class="form-control" type="text" name="nombreOferta" id="nombreOferta">
+							</div>
+							<div class="form-group">
+								<h5>Nombre distribuidora</h5>
+								<input class="form-control" type="text" name="nombreDis" id="nombreDis">
+							</div>
+							<div class="form-group">
+								<h5>Fecha de termino</h5>
+								<input class="form-control" type="text" name="fechaTer" id="fechaTer">
+							</div>
+							<div class="form-group">
+								<h5>Productos que aplican</h5>
+								<input class="form-control" type="text" name="fechaTer" id="fechaTer">
+							</div>
+							<div class="form-group">
+								<h5>Descripción producto</h5>
+								<textarea name="descripcionProd" id="descripcionProd"
+								class="form-control" clos="60" rows="5" >
+								</textarea>
+							</div>
+							<div class="form-group">
+								<h5>Descuento oferta</h5>
+								<input class="form-control" type="number" min="0"  name="descuentoOferProd" id="descuentoOferProd">
+							</div>
+							<div class="center">
+								<button type="reset" class="btn primary-btn">Guardar cambios</button>
+							</div>
+						</div>
+					</div>
+				</form>
+			</div>
+			<!-- /Editar oferta -->
+
+			<!-- Tabla de ofertas -->
+
+			<div class="container">
+				<div class="col-lg-10" >
+			<table class="contenido-tabla">
+				<thead>
+				<tr>
+					<th scope="col">Nombre Oferta</th>
+					<th scope="col">Nombre distribuidora</th>
+					<th scope="col">Fecha termino</th>
+					<th scope="col">Productos Que Aplican</th>
+					<th scope="col">Descripción</th>
+					<th scope="col">Contactos</th>
+					<th scope="col">acciones</th>
+				</tr>
+				</thead>
+				<tbody>
+				<tr>
+					<th scope="row">1</th>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td><li><a href="Formulario_EditarOferta.html">Editar</a></li><li><a>Eliminar</a></li></td>
+				</tr>
+				<tr>
+					<th scope="row">1</th>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td><li><a href="Formulario_EditarOferta.html">Editar</a></li><li><a>Eliminar</a></li></td>
+				</tr>
+				<tr>
+					<th scope="row">1</th>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td><li><a href="Formulario_EditarOferta.html">Editar</a></li><li><a>Eliminar</a></li></td>
+				</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+			<!-- /Centro de pagina -->
+	
+	
+			<!-- SECTION -->
+			<div class="section">
+				<!-- container -->
+				<div class="container">
+					<!-- row -->
+					<div class="row">
+					</div>
+					<!-- /row -->
+				</div>
+				<!-- /container -->
+			</div>
+
+		<!-- SECTION -->
+		<div class="section">
+			<!-- container -->
+			<div class="container">
+				<!-- row -->
+				<div class="row">
+				</div>
+				<!-- /row -->
+			</div>
+			<!-- /container -->
+		</div>
+		<!-- /SECTION -->
+
+
+		<!-- FOOTER -->
+		<footer id="footer">
+			<!-- top footer -->
+			<div class="section">
+				<!-- container -->
+				<div class="container">
+					<!-- row -->
+					<div class="row">
+						<div class="col-md-3 col-xs-6">
+							<div class="footer">
+								<h3 class="footer-title">Sobre Nosotros</h3>
+								<p>La Importadora Larrain se encarga de llevar los mejores productos desde china directo a la puerta de su casa. Nosotros lo importamos por ti.</p>
+								<ul class="footer-links">
+									<li><a href="#"><i class="fa fa-map-marker"></i>1734 Stonecoal Road</a></li>
+									<li><a href="#"><i class="fa fa-phone"></i>+021-95-51-84</a></li>
+									<li><a href="#"><i class="fa fa-envelope-o"></i>Larrain.Impor@gmail.com</a></li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="col-md-3 col-xs-6">
+							<div class="footer">
+								<h3 class="footer-title">Categorias</h3>
+								<ul class="footer-links">
+									<li><a href="#">Destacados</a></li>
+									<li><a href="#">Laptops</a></li>
+									<li><a href="#">Celulares</a></li>
+									<li><a href="#">Camaras</a></li>
+									<li><a href="#">Accessorios</a></li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="clearfix visible-xs"></div>
+
+						<div class="col-md-3 col-xs-6">
+							<div class="footer">
+								<h3 class="footer-title">Información</h3>
+								<ul class="footer-links">
+									<li><a href="#">Sobre Nosotros</a></li>
+									<li><a href="#">Contactanos</a></li>
+									<li><a href="#">Politica de Privacidad</a></li>
+									<li><a href="#">Reembolsos y </a></li>
+									<li><a href="#">Terminos y Condiciones</a></li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="col-md-3 col-xs-6">
+							<div class="footer">
+								<h3 class="footer-title">Servicio</h3>
+								<ul class="footer-links">
+									<li><a href="#">Mi Cuenta</a></li>
+									<li><a href="#">Ver Carro</a></li>
+									<li><a href="#">Lista de Deseados</a></li>
+									<li><a href="#">Seguir mi pedido</a></li>
+									<li><a href="#">Ayuda</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<!-- /row -->
+				</div>
+				<!-- /container -->
+			</div>
+			<!-- /top footer -->
+
+			<!-- bottom footer -->
+			<div id="bottom-footer" class="section">
+				<div class="container">
+					<!-- row -->
+					<div class="row">
+						<div class="col-md-12 text-center">
+							<ul class="footer-payments">
+								<li><a href="#"><i class="fa fa-cc-visa"></i></a></li>
+								<li><a href="#"><i class="fa fa-credit-card"></i></a></li>
+								<li><a href="#"><i class="fa fa-cc-paypal"></i></a></li>
+								<li><a href="#"><i class="fa fa-cc-mastercard"></i></a></li>
+								<li><a href="#"><i class="fa fa-cc-discover"></i></a></li>
+								<li><a href="#"><i class="fa fa-cc-amex"></i></a></li>
+							</ul>
+							<span class="copyright">
+								<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+								Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+							<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+							</span>
+
+
+						</div>
+					</div>
+						<!-- /row -->
+				</div>
+				<!-- /container -->
+			</div>
+			<!-- /bottom footer -->
+		</footer>
+		<!-- /FOOTER -->
+
+		<!-- jQuery Plugins -->
+		<script src="js/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/slick.min.js"></script>
+		<script src="js/nouislider.min.js"></script>
+		<script src="js/jquery.zoom.min.js"></script>
+		<script src="js/main.js"></script>
+
+	</body>
+</html>

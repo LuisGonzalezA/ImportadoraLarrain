@@ -220,19 +220,9 @@
                 <div class="row borde-bootstrap-row">
                     <div class="col-sm-6">
                         <div class="form-group">
-                            <label for="IDofer">ID de oferta</label>
-                            <input class="form-control" type="text" name="IDofer" id="IDofer" 
-                                aria-describedby="rut-help" placeholder="Ingresa el ID unico de la oferta">
-                        </div>
-                        <div class="form-group">
                             <label for="NomOfer">Nombre de oferta</label>
                             <input class="form-control" type="text" name="NomOfer" id="NomOfer" 
                                 aria-describedby="rut-help" placeholder="Ingresa el nombre de la oferta">
-                        </div>
-                        <div class="form-group">
-                            <label for="FechIni">Fecha de inicio</label>
-                            <input class="form-control" type="text" name="FechIni" id="FechIni" 
-                                aria-describedby="rut-help" placeholder="Ingresa la fecha de inicio de la oferta">
                         </div>
                         <div class="form-group">
                             <label for="FechTer">Fecha de termino</label>
@@ -245,33 +235,41 @@
                                 placeholder="Escribe aquí el nombre del proveedor">
                         </div>
                         <div class="form-group">
-                            <label for="productos">Productos que aplican</label>
-                            <input class="form-control" type="text" name="productos" id="Productos" 
+                            <label for="productos">Categorias</label>
+                            <select class="form-control" type="text" name="productos" id="Productos" 
                                 placeholder="Escribe aquí los Productos que aplican a la oferta">
+								<option value="none">seleccione una Categoria</option>
+								<option value="celulares">celulares</option>
+                                <option value="gatos">notebooks</option>
+                                <option value="accesorio">accesorio</option>
+								<option value="camaras">Camaras</option>
+							</select>
                         </div>
                         <div class="form-group">
                             <label for="desc">Descripcion</label>
-                            <input class="form-control" type="desc" name="desc" id="desc" 
-                                aria-describedby="correo-help" placeholder="Escribe aquí la descripcion de la oferta">
+                            <textarea class="form-control" type="desc" name="desc" id="desc" 
+                                aria-describedby="correo-help" placeholder="Escribe aquí la descripcion de la oferta"></textarea>
                             <small id="correo-help" class="form-text text-muted">
                                 Escribe una descripcion de la oferta incluyendo porcentajes de descuento o precios especificos de aplicar en la oferta.
                             </small>
                         </div>
                         <h5>Metodos de contacto</h5>
+						<div class="form-group">
                             <label for="correo">Correo</label>
                             <input class="form-control" type="email" name="correo" id="correo" 
                                 aria-describedby="correo-help" placeholder="Escribe aquí tu correo">
                             <small id="correo-help" class="form-text text-muted">
                                 Escribe el correo del proveedor
                             </small>
-                        </div>
-                        <div class="form-group">
-                            <label for="RRSS">RRSS</label>
-                            <textarea class="form-control" type="rrss" name="rrss" id="rrss" width="5" cols="20" rows="2" 
-                                aria-describedby="direccion-help"placeholder="Escribe aquí los nombres de usuario en las redes sociales que use el proveedor"></textarea>
-                            <small id="direccion-help" class="form-text text-muted">
-                                Si el proveedor no usa alguna red social ingresar "No aplica"
+						</div>
+						<div class="form-group">
+                            <label for="correo">Numero de contacto</label>
+                            <input class="form-control" type="text" name="Telefono" id="Telefono" 
+                                aria-describedby="correo-help" placeholder="Escribe aquí el numero de contacto">
+                            <small id="correo-help" class="form-text text-muted">
+                                Escribe el numero de contacto
                             </small>
+						</div>
                         </div>
                     </div>
 					<button type="submit" class="primary-btn">Guardar cambios</button>
