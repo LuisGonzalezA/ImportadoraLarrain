@@ -230,7 +230,12 @@
                                 aria-describedby="rut-help" placeholder="Ingresa el nombre de la oferta">
                         </div>
                         <div class="form-group">
-                            <label for="FechTer">Fecha de termino de validez</label>
+                            <label for="FechIni">Fecha de inicio</label>
+                            <input class="form-control" type="text" name="FechIni" id="FechIni" 
+                                aria-describedby="rut-help" placeholder="Ingresa la fecha de inicio de la oferta">
+                        </div>
+                        <div class="form-group">
+                            <label for="FechTer">Fecha de termino</label>
                             <input class="form-control" type="text" name="FechTer" id="FechTer" 
                                 aria-describedby="rut-help" placeholder="Ingresa la fecha de termino de la oferta">
                         </div>
@@ -255,22 +260,22 @@
                         <h5>Metodos de contacto</h5>
                             <label for="correo">Correo</label>
                             <input class="form-control" type="email" name="correo" id="correo" 
-                                aria-describedby="correo-help" placeholder="Escribe aquí el correo del proveedor">
+                                aria-describedby="correo-help" placeholder="Escribe aquí tu correo">
                             <small id="correo-help" class="form-text text-muted">
                                 Escribe el correo del proveedor
                             </small>
                         </div>
-						<label for="correo">Telefono</label>
-						<input class="form-control" type="email" name="correo" id="correo" 
-							aria-describedby="correo-help" placeholder="Escribe aquí el numero de telefono del proveedor">
-						<small id="correo-help" class="form-text text-muted">
-						</small>
-					</div>
+                        <div class="form-group">
+                            <label for="RRSS">RRSS</label>
+                            <textarea class="form-control" type="rrss" name="rrss" id="rrss" width="5" cols="20" rows="2" 
+                                aria-describedby="direccion-help"placeholder="Escribe aquí los nombres de usuario en las redes sociales que use el proveedor"></textarea>
+                            <small id="direccion-help" class="form-text text-muted">
+                                Si el proveedor no usa alguna red social ingresar "No aplica"
+                            </small>
                         </div>
                     </div>
-					<button type="submit" class="primary-btn">Guardar cambios</button>
-                    <button type="erase" class="terciary-btn">Eliminar Oferta</button>
-					<button type="reset" class="secondary-btn">Cancelar cambios</button> 
+					<button class="primary-btn">Volver a la oferta</button>
+                    <button class="terciary-btn"><a href="Pagina_reporte.html">Reportar un error</a></button>
                 </div>
             </form>
         </div>

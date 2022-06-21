@@ -124,10 +124,10 @@ ul, ol {
 .terciary-btn {
   display: inline-block;
   padding: 12px 30px;
-  background-color: red;
+  background-color: yellow;
   border: none;
   border-radius: 40px;
-  color: white;
+  color: black;
   text-transform: uppercase;
   font-weight: 700;
   text-align: center;
@@ -377,6 +377,60 @@ textarea.input {
 .section-title .section-nav .products-slick-nav {
   top: 0px;
   right: 0px;
+}
+/*----------------------------*\
+Tablas
+\*----------------------------*/
+
+.table{
+  margin: auto;
+  width: 100%;
+  margin: auto;
+}
+
+
+.contenido-tabla {
+  border-collapse: collapse;
+  margin: 20px;
+  font-size: 16px;
+  min-width: 10%;
+}
+
+.contenido-tabla thead tr {
+  background-color: yellowgreen;
+  color: black;
+  text-align: left;
+  font-weight: bold;
+  border-top: 2px solid black;
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+  border-bottom: 2px solid black;
+}
+
+.contenido-tabla th,
+.contenido-tabla td{
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+  padding: 12px 15px;
+}
+
+.contenido-tabla tbody tr{
+  background-color: white;
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+  border-bottom: 2px solid black;
+}
+
+.contenido-tabla tbody tr:nth-of-type(even){
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+  border-bottom: 2px solid black;
+}
+
+.contenido-tabla tbody tr:last-of-type{
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+  border-bottom: 2px solid black;
 }
 
 /*----------------------------*\
